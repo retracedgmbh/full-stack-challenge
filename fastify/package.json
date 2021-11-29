@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "dotenv": "10.0.0",
-    "fastify": "3.22.0",
+    "fastify": "3.24.0",
     "fastify-autoload": "3.9.0",
     "fastify-plugin": "3.0.0",
-    "pino-pretty": "7.1.0"
+    "pino-pretty": "7.2.0"
   },
   "devDependencies": {
-    "nodemon": "2.0.13"
+    "nodemon": "2.0.15"
   }
 }
