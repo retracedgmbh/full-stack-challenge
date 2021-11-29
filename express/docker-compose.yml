@@ -1,0 +1,15 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:13
+    container_name: retraced-coffee-pgsql
+    environment:
+      POSTGRES_PASSWORD: R3tr4c3d*
+    ports:
+      - 5432:5432
+    volumes:
+      - retraced-pg-data:/var/lib/postgresql/data
+      - ./setup/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+
+volumes:
+  retraced-pg-data:

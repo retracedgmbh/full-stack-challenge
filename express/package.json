@@ -1,20 +1,23 @@
 {
-  "name": "fastify",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "David ODonnell",
+  "name": "express",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon src/",
-    "start": "node src/"
+    "dev": "nodemon ./src/index.js",
+    "prettier": "npx prettier --write ."
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "2.6.9",
     "dotenv": "10.0.0",
-    "express": "4.17.1",
+    "express": "4.16.1",
+    "http-errors": "1.6.3",
+    "pg": "^8.7.1",
     "pino-http": "6.3.1",
     "pino-pretty": "7.2.0"
   },
   "devDependencies": {
-    "nodemon": "2.0.15"
+    "nodemon": "2.0.15",
+    "prettier": "2.5.0"
   }
 }
