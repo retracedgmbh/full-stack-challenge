@@ -1,4 +1,4 @@
-const db = require("../libs/postgres");
+const { openDb } = require("../libs/sqlite");
 
 const sql = `
   SELECT id, name
@@ -6,10 +6,10 @@ const sql = `
 `;
 
 const list = async (ctx) => {
-  const result = await db.query(sql);
-  console.log("result", result);
+  const db = await openDb();
+  const result = await db.all(sql);
 
-  return result.rows;
+  return result;
 };
 
 module.exports = {
