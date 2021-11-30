@@ -16,7 +16,7 @@ const Suppliers = () => {
 
   useEffect(() => {
     loadSuppliers();
-  }, [suppliers]);
+  }, []);
 
   return (
     <main>

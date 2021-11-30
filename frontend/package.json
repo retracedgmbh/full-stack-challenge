@@ -1,9 +1,9 @@
 {
-  "name": "express",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "serve": "vite preview",
     "prettier": "npx prettier --write ."
